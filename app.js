@@ -21,7 +21,7 @@ function reiniciarJogo() {
             document.getElementById('reiniciar').setAttribute('disabled', true);
         }
 
-let numeroLimite = 10
+let numeroLimite = 20
 function gerarNumeroAleatorio() {
     let numeroEscolhido = parseInt(Math.random() * numeroLimite + 1);
     let quantidadeDeElementosnaLista = listaDeNumerosSorteados.length;
@@ -48,7 +48,7 @@ let numeroSecreto = gerarNumeroAleatorio();
 
 function exibirMensagemInicial(){
 exibirTextoNaTela('h1', 'Jogo do número secreto');
-exibirTextoNaTela('p', 'Escolha um número entre 1 e 10');
+exibirTextoNaTela('p', 'Escolha um número entre 1 e 20');
 }
 
 exibirMensagemInicial()
