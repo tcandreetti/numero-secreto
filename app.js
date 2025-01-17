@@ -5,7 +5,7 @@ function exibirTextoNaTela(tag, texto) {
             let voices = speechSynthesis.getVoices();
             let utterance = new SpeechSynthesisUtterance(texto);
             utterance.lang = 'pt-BR'; 
-            utterance.rate = 3.0; 
+            utterance.rate = 3.1; 
             utterance.voice = voices[1]
             window.speechSynthesis.speak(utterance); 
         } else {
